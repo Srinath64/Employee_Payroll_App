@@ -114,7 +114,7 @@ const createEmployeePayroll = () => {
     setTextValue('.salary-output', 400000);
     setValue('#day', '1');
     setValue('#month', 'January');
-    setValue('#year', '2021');
+    setValue('#year', '2022');
     setValue('#notes', '');
   }
   
