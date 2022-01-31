@@ -17,7 +17,7 @@ const headerHtml =
 
 const innerHtml = `${headerHtml}
     <tr>
-        <td><img class="profile" src="../assets/profile-images/Ellipse -1.png" alt="profile_img-1"></td>
+        <td><img class="profile" src="../assets/profile-images/Ellipse -3.png" alt="profile_img-1"></td>
         <td>Srinath Sivakumar</td>
         <td>Male</td>
         <td>
@@ -34,4 +34,3 @@ const innerHtml = `${headerHtml}
     </tr>`;
 document.querySelector('#table-display').innerHTML = innerHtml;
 }
-  
