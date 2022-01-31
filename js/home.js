@@ -7,29 +7,22 @@ window.addEventListener('DOMContentLoaded', (event) => {
 });
 
 const getEmployeePayrollDataFromStorage = () => {
-  return localStorage.getItem('EmployeePayrollList') ? JSON.parse(localStorage.getItem('EmployeePayrollList')) : [];
+  return localStorage.getItem('EmployeePayrollList') ? 
+  JSON.parse(localStorage.getItem('EmployeePayrollList')) : [];
 }
 
 const createInnerHtml = () => {
 
 const headerHtml =
-       `<th>Profile</th>
-        <th>Name</th>
-        <th>Gender</th>
-        <th>Department</th>
-        <th>Salary</th>
-        <th>Start Date</th>
-        <th>Actions</th>`;
-
+       "<th>Profile</th><th>Name</th><th>Gender</th><th>Department</th>"+
+       "<th>Salary</th><th>Start Date</th><th>Actions</th>";
+        
 if(employeePayrollDataList.length == 0)return;
-
 let innerHtml = `${headerHtml}`;
-//let employeePayrollDataList = createEmployeePayrollJSON();
-
 for(const employeePayrollData of employeePayrollDataList){
 innerHtml = `${innerHtml}
       <tr>
-        <td><img class="profile" src="${employeePayrollData._profileImage}"></td>
+        <td><img class="profile" src="${employeePayrollData._Profile}"></td>
         <td>${employeePayrollData._name}</td>
         <td>${employeePayrollData._gender}</td>
         <td>${getDepartmentHtml(employeePayrollData._department)}</td>
