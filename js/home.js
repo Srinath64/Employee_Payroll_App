@@ -20,7 +20,7 @@ let innerHtml = `${headerHtml}`;
 for(const employeePayrollData of employeePayrollList){
 innerHtml = `${innerHtml}
       <tr>
-        <td><img class="profile" src="${employeePayrollData._profilePic}"></td>
+        <td><img class="profile" src="${employeePayrollData._profileImage}"></td>
         <td>${employeePayrollData._name}</td>
         <td>${employeePayrollData._gender}</td>
         <td>${getDepartmentHtml(employeePayrollData._department)}</td>
