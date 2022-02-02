@@ -22,7 +22,7 @@ salary.addEventListener('input', function() {
     output.textContent = salary.value;
     });
 
-    var date = document.getElementById("day");
+  var date = document.getElementById("day");
   var month = document.getElementById("month");
   var year = document.getElementById("year");
   const dateError = document.querySelector(".date-error");
